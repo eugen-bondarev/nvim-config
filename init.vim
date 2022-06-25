@@ -1,23 +1,23 @@
-:lan en_US
+lan en_US
 
-:set number
-:set relativenumber
-:set autoindent
-:set tabstop=2
-:set shiftwidth=2
-:set smarttab
-:set softtabstop
-:set mouse=a
-:set nobackup
-:set scrolloff=10
-:set nowrap
-:set incsearch
-:set ignorecase
-:set smartcase
-:set history=1000
-:set wildmenu
-:set wildmode=list:longest
-:set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe
+set number
+set relativenumber
+set autoindent
+set tabstop=2
+set shiftwidth=2
+set smarttab
+set softtabstop
+set mouse=a
+set nobackup
+set scrolloff=10
+set nowrap
+set incsearch
+set ignorecase
+set smartcase
+set history=1000
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe
 
 call plug#begin()
 
@@ -61,6 +61,8 @@ let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
 Plug 'vim-airline/vim-airline'
+
+Plug 'mg979/vim-visual-multi'
 
 call plug#end()
 
