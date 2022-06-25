@@ -21,6 +21,10 @@
 
 call plug#begin()
 
+" Icons
+Plug 'ryanoasis/vim-devicons'
+set encoding=UTF-8
+
 " File management
 Plug 'preservim/nerdtree' 
 let NERDTreeShowLineNumbers=1
@@ -28,10 +32,11 @@ autocmd FileType nerdtree setlocal relativenumber
 
 " CTRL + P to find files
 Plug 'ctrlpvim/ctrlp.vim' 
+let g:ctrlp_custom_ignore = 'node_modules\|git'
 
 " Color schemes
 Plug 'rafi/awesome-vim-colorschemes'
-Plug 'navarasu/onedark.nvim'
+Plug 'ful1e5/onedark.nvim'
 
 " Auto close pairs - ''()[]{}
 Plug 'vim-scripts/AutoClose'
@@ -44,6 +49,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
 let g:coc_global_extensions = [
 \	'coc-tsserver'
 \]
@@ -53,7 +60,10 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
-colorscheme onedark
+colorscheme deep-space
+set termguicolors
 
