@@ -52,7 +52,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 let g:coc_global_extensions = [
-\	'coc-tsserver'
+\	'coc-tsserver',
 \	'coc-css'
 \]
 autocmd FileType scss setl iskeyword+=@-@
