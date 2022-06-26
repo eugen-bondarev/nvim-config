@@ -53,7 +53,9 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 let g:coc_global_extensions = [
 \	'coc-tsserver'
+\	'coc-css'
 \]
+autocmd FileType scss setl iskeyword+=@-@
 
 " All langs
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
